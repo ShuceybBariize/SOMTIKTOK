@@ -1,0 +1,221 @@
+/* ------------ VARIABLES ------------ */
+:root{
+  /* COLORS */
+  --color: #9176FF;
+  --dark-color: #000000;
+  --dark-icon-color: #ffd900;
+  --light-color: #f7f7f7;
+  --light-icon-color: #FFDE59;
+}
+header {
+  margin-bottom: 18px;
+  border-radius: 15px ;
+  border-bottom: solid 2px #FE2C55;
+  }
+
+/* -------------- MyLogo -------------- */
+    .logos {
+      color: #9176FF;
+      margin-left: -45px;
+      display: flex;
+      padding: 0;
+      font-size: 26px;
+      font-weight: bold;
+    }
+
+/* -------------- ICON BUTTON -------------- */
+.btn{
+  margin: 0;
+padding: 0;
+display: flex;
+justify-content: center; 
+ cursor: pointer;
+  
+
+}
+.btn__icon{
+  color: #40f2e8;
+  font-size: 2.8rem;
+}
+
+/* -------------- ANIMATION ------------ */
+.btn__icon.animated{
+  animation: spin 0.5s;
+}
+@keyframes spin{
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* -------------- DARKMODE -------------- */
+body.darkmode {
+  
+  color: var(--light-icon-color);
+  background-color: var(--dark-color);
+}
+
+/*  Icons Changed  */
+.darkmode svg{
+  fill: var(--light-icon-color);
+}
+
+/*  lists in the sideBar Color  */
+body.darkmode .sidebar a {
+ color: var(--light-icon-color);
+}
+body.darkmode .navBar a{
+ color: var(--light-icon-color);
+}
+
+
+
+/*       changing to dark the icon Color will be Yellow             */
+.darkmode .btn__icon {
+  color: var(--dark-icon-color);
+}
+
+/* -------------- NavBar ------------ */
+
+nav {
+  display: flex;
+}
+
+/*       Just Menus     */
+.menuNav {
+  display: flex;
+}
+
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-content: space-around;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+nav li {
+  height: 50px;
+  padding: 0px 10px;
+}
+
+nav a {
+  height: 100%;
+  text-decoration: none;
+  display: flex;
+  font-weight: bold;
+  font-size: 16px;
+  color: var(--dark-color);
+  align-items: center;
+}
+
+
+
+nav li:first-child {
+  margin-right: auto;
+}
+
+/* -------------- SideBar ------------ */
+
+.sidebar {
+  position: fixed;
+  top:-10px;
+  right: 0;
+  height: 100vh;
+  width: 200px;
+  z-index: 999;
+  background-color:rgba(255, 255, 255, 0.228);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;  
+  box-shadow: -10px 0px 10px rgba(22, 2, 246, 0.286);
+  backdrop-filter: blur(10px);
+}
+.sidebar li {
+  width: 100%;
+  
+}
+
+.sidebar a{
+font-weight: bold;
+  width: 100%;
+}
+
+/* Hide Menu At Size laptop*/
+
+.menu-button{
+  display: none;
+}
+
+
+
+
+@media (max-width: 1035px) {
+
+  /* Show Menu At Size 922px */
+
+  .menu-button{
+    display: block;
+  }
+
+  nav a {
+    margin: 0;
+  padding: 0;
+    font-size: 16px;
+  
+  }
+ 
+  .logos {
+    margin-left: -35px;
+    display: flex;
+    height:40px;
+    width:150px;
+  }
+
+  .btn{
+    margin-right: 80px;
+    padding: 0;
+    /* width: 100%; */
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+      
+    
+    }
+  .hideSidebar{
+    display: none;
+  }
+
+  .btn__icon{
+    font-size: 1.8rem;
+  }
+ 
+}
+@media (max-width:400px ){
+  .sidebar {
+    width: 100%;
+  }
+  .logos {
+    margin-left: -35px;
+    height: 30px;
+    width: 100px ;
+    
+  }
+  .btn{
+    margin-right:40px;
+    padding:0;
+    display: flex;
+    align-items: center;
+     cursor: pointer;
+      
+    
+    }
+    .btn__icon {
+      font-size :1.4rem;
+    }
+
+}
+
+

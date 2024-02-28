@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+    <title>Tiktok Video Downloader</title>
+    <link rel="stylesheet" href="css/download.css"> 
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css"
+   
+
+      
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+<body>
+
+    <header>
+        <nav>
+         <ul class="sidebar">
+             <LI onclick=hideSidebar()><a href="#"> <svg xmlns="http://www.w3.org/2000/svg" height="28" viewBox="0 -960 960 960" width="28"><path  d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg> </a></LI>
+             <LI><a href="download.html"> Download Mp3 </a></LI>
+             <LI><a href="#"> Download Slide Photo</a></LI>
+        
+         </ul>
+         <ul class="navBar">
+             <LI class="logo"><a href="index.html">SOMTIKTOK</a></LI>
+             <div class="btn">
+                 <i class="btn__icon fa-solid"></i>
+</div>
+             <LI class="hideSidebar"><a href="download.html"> Download Mp3  </a></LI>
+             <LI class="hideSidebar"><a href="#"> Download Slide Photo</a></LI>
+             <LI class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="28" viewBox="0 -960 960 960" width="28"><path  d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></LI>
+        
+         </ul>
+
+        </nav>
+    
+ </header>
+
+     <main class="main">
+     <div class="download">
+        <div class="left-content">
+            <div id="info">
+                <div id="avatar-column">
+                    <img id="avatar" src="" alt="User Avatar"> 
+		
+
+                </div>
+                <div id="info-column">
+                    <h2 id="username">Username:</h2>
+                    <p id="video-title">Video Title:</p>
+                    <a id="download-link" style="display: none;"></a>
+                    <a id="hd-download-link" style="display: none;"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="right-content">
+            <div id="button-downloads">
+                <button id="button-right-1" class="download1"><i class="fas fa-download"></i> Download</button>
+                <button id="button-right-2" class="hd-download"><i class="fas fa-download"></i> Download HD</button>
+                <button id="button-right-3" class="back-button">Download Another Video</button>
+
+
+            </div>
+            <div id="photo-container"></div>
+
+        </div>
+    </div>
+    
+</main>
+<script src="downlaod.js"></script>
+<script src="toggle.js"></script>
+<script src="frontend.js"></script>
+<link rel="stylesheet" href="footer.css">
+
+<footer>
+    <div class="foot">
+        <ul>
+            <h3 class="legal">Legal</h3>
+            <li><a href="">Contact Us</a></li>
+            <li><a href="">Support</a></li>
+        </ul>
+        <ul>
+            <h3 class="tools">Tools</h3>
+            <li><a href="">Privacy & Policy</a></li>
+            <li><a href="">Terms and Conditions</a></li>
+        </ul>
+
+
+    </div>
+</footer>
+<div class="copyRight">
+<p id="footer-txt">&copy; CopyRights 2024 SOMTIKTOK . All Rights Reserved</p>
+</div>
+
+</body>
+
+</html>
+
+

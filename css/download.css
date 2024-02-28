@@ -1,0 +1,146 @@
+.download {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;   
+    align-items: start;
+    margin-bottom: 50px;
+    /* width: 100%; */
+    /* padding: 20px;  */
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    width: 100%;
+   margin-top: 60px;
+}
+
+.left-content {
+    flex: 1; 
+    /* padding: 20px; */
+    margin-bottom: 20px;
+}
+
+.left-content #info {
+   
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    background-color: #f0f0f0;
+}
+
+.right-content {
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    
+    flex: 0.6; 
+    /* padding: 20px; */
+}
+
+#button-downloads {
+    position: absolute;
+    top: 0.1;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.download1, .hd-download {
+    background: linear-gradient(90deg, #25faEE, #FE2C55);
+}
+.download1:hover, .hd-download:hover {
+    background: linear-gradient(90deg, #25faEE, #FE2C55);
+}
+
+#button-downloads button {
+    width: 100%;
+    height: 45px;
+    margin-bottom: 10px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#avatar-column {
+    text-align: center;
+}
+
+#info-column {
+    flex: 2;
+    padding-left: 20px;
+}
+
+#avatar {
+    width: 110px;
+    height: 110px;
+    border-radius: 15px;
+    object-fit: cover;
+    border: 2px solid #0073e6;
+}
+
+#button-downloads .back-button {
+    background-color: black;
+}
+
+#username {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 12px;
+    margin-top: 6px;
+}
+
+#video-title {
+    font-size: 15px;
+    font-weight: bold;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@media (max-width: 1020px) {
+    .download {
+        flex-direction: column;
+    }
+
+    .left-content, .right-content {
+        width: 100%;
+
+    }
+
+    .left-content #info {
+        width: 100%;
+    }
+
+    #button-downloads {
+        position: static;
+        align-items: stretch;
+    }
+
+    .download1, .hd-download {
+        background: linear-gradient(90deg, #25faEE, #FE2C55);
+    }
+
+    #button-downloads button {
+        margin: 0;
+        margin-bottom: 10px;
+        height: 45px;
+    }
+
+    #button-downloads .back-button {
+        background: black;
+    }
+}
